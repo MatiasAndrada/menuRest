@@ -3,7 +3,7 @@ const elmtJugos = jugos.length;
 const elmtComida = comida.length;
 
 
-
+$(".btnDesayuno").click(() =>{ 
 
 for(const producto of coffee){
     const itemProduct = $(".catalogo").append(`
@@ -11,9 +11,10 @@ for(const producto of coffee){
     <h2> Producto: ${producto.tipo} </h2>
     <p> Precio: ${producto.precio} </p>
     <div>
-    `)
-    $("catalogo").append(itemProduct)
+`)
+    console.log(producto)
 }
+};
 
 
 class product {
