@@ -1,7 +1,19 @@
-const listDesayuno = coffee.length;
-console.log(listDesayuno)
+const elmtCoffee = coffee.length;
+const elmtJugos = jugos.length;
+const elmtComida = comida.length;
 
+console.log(elmtCoffee, elmtComida, elmtJugos)
 
+class product {
+    constructor(tipo, price){
+        this.tipo = tipo; 
+        this.price = price;
+    }
+
+    agregarCard(product){
+        $("catalogo__items").append()
+    }
+}
 
 
 /*
