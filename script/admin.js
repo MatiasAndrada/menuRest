@@ -2,7 +2,14 @@ const elmtCoffee = coffee.length;
 const elmtJugos = jugos.length;
 const elmtComida = comida.length;
 
-console.log(elmtCoffee, elmtComida, elmtJugos)
+for(const producto of coffee){
+    const itemProduct = $(".catalogo").add("div").addClass("catalogo__items card-body")
+    $(itemProduct).append(`
+    <h2> Porducto: ${producto.tipo} </h2>
+    <p> Precio: ${producto.precio} </p>
+    `)
+    $("catalogo").append(itemProduct)
+}
 
 class product {
     constructor(tipo, price){
@@ -10,11 +17,13 @@ class product {
         this.price = price;
     }
 
-    agregarCard(product){
-        $("catalogo__items").append()
+    agregarProduct(product){
+        $(".catalogo").prepend(`
+        <h2>COMIDAAA<h2>
+        <p>parrafo<p>
+        `)
     }
 }
-
 
 /*
 agregarCard(user){
