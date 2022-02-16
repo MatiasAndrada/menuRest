@@ -2,14 +2,19 @@ const elmtCoffee = coffee.length;
 const elmtJugos = jugos.length;
 const elmtComida = comida.length;
 
+
+
+
 for(const producto of coffee){
-    const itemProduct = $(".catalogo").add("div").addClass("catalogo__items card-body")
-    $(itemProduct).append(`
-    <h2> Porducto: ${producto.tipo} </h2>
+    const itemProduct = $(".catalogo").append(`
+    <div class="item__product card-body">
+    <h2> Producto: ${producto.tipo} </h2>
     <p> Precio: ${producto.precio} </p>
+    <div>
     `)
     $("catalogo").append(itemProduct)
 }
+
 
 class product {
     constructor(tipo, price){
