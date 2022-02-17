@@ -10,7 +10,7 @@ body{
 }
 
 .header{
-    position: fixed;
+    position: relative;
     background-color: black;
     height: 140px;
     width: 100%;
@@ -25,11 +25,8 @@ body{
 .header__text{
     text-align: end;
     color: white;
-    margin: 30px;
+    margin-right: 25px;
     width: auto;
-    height: 150px;
+    height: 140px;
     float: right;
-}
-.catalogo{
-    margin-top: 160px;
 }
