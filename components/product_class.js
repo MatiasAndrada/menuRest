@@ -1,6 +1,6 @@
 class Producto {
     constructor(array){
-        this.array = array
+        this.array = array;
         this.pushCard()
     }
     

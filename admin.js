@@ -2,10 +2,44 @@ const elmtCoffee = coffee.length;
 const elmtJugos = jugos.length;
 const elmtComida = comida.length;
 
-$("#breakfastBtn").click(() => {
-    new Producto(coffee);
-
+$("#cafeBtn").click(() => {
+new Producto(coffee);
+console.log(Producto)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
