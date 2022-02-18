@@ -13,6 +13,7 @@ class Producto {
                 <button class="btn btn-success">+</button>
                 <div>`)
             }
+            
     }
 
 }
