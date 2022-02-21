@@ -1,4 +1,4 @@
-$("#container-Dsyn").on("click", function (evt) {
+$("#container").on("click", function (evt) {
     if (evt.target.tagName === "BUTTON") {
         const btn = evt.target;
         const prdt = btn.dataset.array
@@ -16,10 +16,9 @@ $("#container-Dsyn").on("click", function (evt) {
     }
     
     function dsbldBtn () {
-        const btn = evt.target.id;
-        const btn2 = "#" + btn;
-        $(btn2).addClass("disabled")
-        console.log (btn)
+        $(".dropdown-item").removeClass("disabled");
+        const btnid = "#" + evt.target.id;
+        $(btnid).addClass("disabled")
     }
     dsbldBtn()
 })
