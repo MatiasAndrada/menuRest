@@ -1,5 +1,6 @@
 $("#container").on("click", function (evt) {
     if (evt.target.tagName === "BUTTON") {
+        $("#prdt").empty()
         const btn = evt.target;
         const prdt = btn.dataset.array
         switch (prdt) {
@@ -14,13 +15,12 @@ $("#container").on("click", function (evt) {
                 break;
         }
     }
-    
-    function dsbldBtn () {
-        $(".dropdown-item").removeClass("disabled");
-        const btnid = "#" + evt.target.id;
-        $(btnid).addClass("disabled")
+    function dsbldBtn() {
+        if (evt.target.tagName === "BUTTON") {
+            $(".dropdown-item").removeClass("disabled");
+            const btnid = "#" + evt.target.id;
+            $(btnid).addClass("disabled")
+        }
     }
     dsbldBtn()
 })
-
-
