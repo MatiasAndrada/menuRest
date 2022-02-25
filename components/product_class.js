@@ -11,9 +11,9 @@ class producto {
             <div class="card" style="width: 20rem;">
                 <img class="card-img-top img fluid" src="${p.img}" alt="Card imagen"
                 <div class="card-block">
-                    <h3 class="card-title fs-3 text-center"> ${p.tipo} </h3>
-                    <b class="fw-bold p-2 text-center">${p.precio} </b>
-                    <button class="addToCart btn btn-outline-success btn-block">+</button>
+                    <h3 class="card-tittle fs-3 text-center"> ${p.tipo} </h3>
+                    <b class="fw-bold p-2 text-center price">${p.precio} </b>
+                    <button onClick="searchButtons();" class="addToCart btn btn-outline-success btn-block">+</button>
                 <div>
                 <div>
             <div>`)
