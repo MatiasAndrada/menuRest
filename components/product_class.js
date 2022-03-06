@@ -8,7 +8,7 @@ class producto {
         for (const p of array){
             $("#prdt").append(`
             <div class="col">
-            <div class="card" style="width: 20rem;">
+            <div class="card" >
                 <img class="card-img-top img fluid" src="${p.img}" alt="Card imagen"
                 <div class="card-block">
                     <h3 class="card-title fs-3 text-center"> ${p.tipo} </h3>

@@ -3,10 +3,6 @@ $(".dropdown-menu").on("click", function (evt) {
         $("#prdt").empty()
         const btn = evt.target;
         const prdt = btn.dataset.array;
-        const buttonStyle = btn.parentElement.parentElement;
-        console.log("🦇 ~ file: admin.js ~ line 7 ~ buttonstyle", buttonstyle)
-        const section = buttonStyle.style;
-        console.log("🦇 ~ file: admin.js ~ line 9 ~ section", section)
         switch (prdt) {
             case "coffee":
                 new producto(coffee)
@@ -21,11 +17,24 @@ $(".dropdown-menu").on("click", function (evt) {
                 new producto(beer)
                 break;
         }
-        switch (section) {
+        const itemBtn = btn.parentElement.parentElement;
+        const btnData = itemBtn.querySelector(".dropdownBtn").dataset.food
+        switch (btnData) {
             case "breakfast":
-                console.log("piola")
+                $("#prdt").removeClass("lunchArea afternoonArea dinnerArea").addClass("breakfastArea");
+            break;
+            case "lunch":
+                $("#prdt").removeClass("breakfastArea  afternoonArea dinnerArea").addClass("lunchArea");
+                break;
+            case "afternoon":
+                $("#prdt").removeClass("breakfastArea lunchArea  dinnerArea").addClass("afternoonArea");
+                break;
+            case "dinner":
+                $("#prdt").removeClass("breakfastArea lunchArea afternoonArea").addClass("dinnerArea");
                 break;
         }
+
+
         dsbldBtn()
     }
     function dsbldBtn() {
