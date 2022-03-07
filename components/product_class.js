@@ -13,7 +13,7 @@ class producto {
                 <div class="card-block">
                     <h3 class="card-title fs-3 text-center"> ${p.tipo} </h3>
                     <b class="fw-bold p-2 text-center price">${p.precio} </b>
-                    <button onClick="searchButtons();" class="item-button addToCart btn btn-outline-success btn-block">+</button>
+                    <button onClick="searchButtons();" class="item-button addToCart btn">+</button>
                 <div>
                 <div>
             <div>`)

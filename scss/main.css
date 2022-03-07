@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11964,6 +11965,10 @@ fieldset:disabled .btn {
   margin: 0;
 }
 
+.bgBody {
+  background-color: #363432;
+}
+
 .header {
   position: relative;
   background-color: black;
@@ -12007,5 +12012,37 @@ fieldset:disabled .btn {
 
 .card {
   height: auto;
+  border-radius: 12px;
+  background-color: #504F4F;
+  margin: 15px;
+  border: 4px #0c0c0c solid;
+}
+
+.card .card-title {
+  color: #E6E8E6;
+  font-family: Hubballi;
+  font-size: 32px;
+}
+
+.card .price {
+  font-size: 24px;
+  color: #E6E8E6;
+  font-family: Hubballi;
+}
+
+.card .addToCart {
+  color: #E6E8E6;
+  font-size: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8px;
+  width: 25%;
+  border: 2px #E6E8E6 solid;
+  border-radius: 12px;
+}
+
+.shopping-cart {
+  background-color: #390D02;
+  color: #E6E8E6;
 }
 /*# sourceMappingURL=main.css.map */

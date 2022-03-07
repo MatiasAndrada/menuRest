@@ -1,5 +1,8 @@
+$(".shopping-cart").hide()
+
 $(".dropdown-menu").on("click", function (evt) {
     if (evt.target.tagName === "BUTTON") {
+        $(".shopping-cart").show()
         $("#prdt").empty()
         const btn = evt.target;
         const prdt = btn.dataset.array;
