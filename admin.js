@@ -19,6 +19,18 @@ $(".dropdown-menu").on("click", function (evt) {
             case "beer":
                 new producto(beer)
                 break;
+            case "vino":
+                new producto(vino)
+                break;
+            case "comidaB":
+                new producto(comidaB)
+                break;
+            case "pizza":
+                new producto(pizza)
+                break;
+            case "comidaD":
+                new producto(comidaD)
+                break;
         }
         const itemBtn = btn.parentElement.parentElement;
         const btnData = itemBtn.querySelector(".dropdownBtn").dataset.food

@@ -1,32 +1,45 @@
-const beer = [
+const comidaD = [
     {
-        "tipo": "Ipa",
-        "precio": "$40",
-        "img": "https://pulsocervecero.com/wp-content/uploads/2019/02/pulsocervecero_imperial_ipa_lata.jpg",
+        "tipo": "Ravioles",
+        "precio": "$230",
+        "img": "img/products/product_dinner/comida/ravioles.jpg",
+        
     },
     {
-        "tipo": "Kune",
+        "tipo": "Fideos con salsa",
+        "precio": "$220",
+        "img": "img/products/product_dinner/comida/fideos-salsa.jpg",
+    },
+    {
+        "tipo": "Fideos con crema",
+        "prasecio": "$180",
+        "img": "img/products/product_dinner/comida/fideos-crema.jpg",
+    },
+    {
+        "tipo": "Milanesa con papas",
+        "precio": "$155",
+        "img": "img/products/product_dinner/comida/milanesa-papas.jpg",
+    },
+    {
+        "tipo": "Carne asada",
+        "precio": "$240",
+        "img": "img/products/product_dinner/comida/carne-asada.jpg",
+    },
+]
+const vino = [
+    {
+        "tipo": "Altura maxina",
+        "precio": "$120",
+        "img": "img/products/product_dinner/vinos/altura-maxima.jpg",
+    },
+    {
+        "tipo": "Paso a paso",
         "precio": "$85",
-        "img": "https://encryptedhttps://http2.mlstatic.com/D_NQ_NP_792263-MLA42280538308_062020-O.jpg-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWbbKlY-DPauGWvLnQfjQNCyZr0E8O-Vh1Q&usqp=CAU",
+        "img": "img/products/product_dinner/vinos/paso-a-paso.jpg",
     },
     {
-        "tipo": "Golden",
-        "precio": "$160",
-        "img": "https://https://untappd.akamaized.net/photos/2021_10_20/99020c8d06e92047127293178bd029df_640x640.jpg.net/wp-content/uploads/2020/11/Cappuccino.jpg",
-    },
-    {
-        "tipo": "Amber lager",
-        "precio": "$65",
-        "img": "https://cdn7.https://http2.mlstatic.com/D_NQ_NP_751875-MLA44839806231_022021-O.jpgkiwilimon.com/recetaimagen/36986/640x426/th5-640x426-46349.jpg.webp",
-    },
-    {
-        "tipo": "24.7",
-        "precio": "$65",
-        "img": "https://https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCATzEmFW6czURz-B4kDf1zVKSsJGypt0mOHZKtkNc9VoXkFzAHYj3uIMztYZKYiVAAI&usqp=CAU.com/wp-content/uploads/2018/02/140405lrg.jpg",
-    },
-    {
-        "tipo": "weisse",
-        "precio": "$85",
-        "img": "https://previews.123rf.com/https://http2.mlstatic.com/D_NQ_NP_808901-MLA44839785871_022021-O.jpg/greenartphotography/greenartphotography1611/greenartphotography161100090/68628840-masala-t%C3%A8-chai-latte-tradizionale-caldo-indiano-teatime-cerimonia-dolce-latte-con-spezie-erbe-infusi.jpg",
+        "tipo": "viña de balbo",
+        "precio": "$50",
+        "img": "img/products/product_dinner/vinos/viñas-balbo.jpg",
     },
 ]
